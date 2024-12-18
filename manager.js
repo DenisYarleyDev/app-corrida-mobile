@@ -63,7 +63,7 @@ function distance(element) {
 
         totalDistance += distance;
 
-        return totalDistance.toFixed(4);
+        return totalDistance.toFixed(2);
     }
 
     function toRad(degree) {

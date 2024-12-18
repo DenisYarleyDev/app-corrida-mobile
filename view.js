@@ -51,6 +51,7 @@ async function listar() {
             map.style.width = '100px';
             map.style.height = '100px';
             map.className = "bg-secondary rounded-4"
+            map.id = `map${element.id}`;
             mapElement.appendChild(map)
 
             //ride details
@@ -80,11 +81,25 @@ async function listar() {
             dateDiv.innerText = `Data: ${getDate(element)}`;
             dateDiv.className = 'text-secondary mt-2'
             dataElement.appendChild(dateDiv);
-        })
+
+            //view map API
+            var viewMap = L.map(`map${element.id}`,{zoomControl: false,
+                dragging: false,
+                attributionControl: false,
+                scrollWheelZoom: false
+            }).setView([element.dados[0].latitude, element.dados[0].longitude], 16);
+
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                
+            }).addTo(viewMap);
+
+            L.marker([element.dados[0].latitude, element.dados[0].longitude]).addTo(viewMap);
+
+            
+            })
 
         i--
 
-        // console.log(element)
     }
 
 }

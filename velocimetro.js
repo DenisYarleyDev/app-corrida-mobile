@@ -58,5 +58,7 @@ function erro(res) {
 
 //parametros para a captura da posição
 const options = {
-    enableHighAccuracy: true
+    enableHighAccuracy: true,
+    timeout: 10000,
+    maximumAge: 0
 };
