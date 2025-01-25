@@ -7,4 +7,4 @@ Desenvolvido em java vanilla e bootstrap para estilização consumindo APIs de g
 APIs para visualização de trajeto em mapa real.
 Desenvolvedor: Denis Yarley
 
-link: app-corrida-mobile.vercel.app
+link: https://app-corrida-mobile.vercel.app
