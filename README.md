@@ -1,6 +1,10 @@
-16/12/24
-adicionando mapa e percurso.
+<h1>App corrida mobile</h1>
+<li>Registra trajetos</li>
+<li>Mapa e percurso</li>
+<li>Monitoramento em tempo real</li>
 
-17/12/24
-finalizado mapa com percuso nos detalhe e mapa com marcador na tela inicial.
-observação: alguns bugs para resolver.
+Desenvolvido em java vanilla e bootstrap para estilização consumindo APIs de geolocalizção do navegador e <br>
+APIs para visualização de trajeto em mapa real.
+Desenvolvedor: Denis Yarley
+
+link: app-corrida-mobile.vercel.app
